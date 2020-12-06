@@ -43,8 +43,8 @@ namespace ConsoleAppToConvertToPDF
         {
             // Create a new MigraDoc document
             Document document = new Document();
-            document.Info.Title = "PROMIS CASE NOTE";
-            document.Info.Subject = "SerPro generated file of all case notes";
+            document.Info.Title = " list NOTE";
+            document.Info.Subject = " generated file of all list notes";
             document.Info.Author = "Data Migration Lange";
 
             DefineStyles(document);
@@ -193,7 +193,7 @@ namespace ConsoleAppToConvertToPDF
             //Image image = section.AddImage("../../images/Logo landscape.png");
             //image.Width = "10cm";
 
-            paragraph = section.AddParagraph("SerPro Data Migration \n Case Notes Summary");
+            paragraph = section.AddParagraph(" Data Migration \n list Notes Summary");
             paragraph.Format.Font.Size = 16;
             paragraph.Format.Font.Color = Colors.DarkRed;
             paragraph.Format.SpaceBefore = "8cm";

@@ -43,9 +43,9 @@ namespace ConsoleAppToConvertToPDF
         {
             // Create a new MigraDoc document
             Document document = new Document();
-            document.Info.Title = "PROMIS CASE NOTE";
-            document.Info.Subject = "SerPro generated file of all case notes";
-            document.Info.Author = "Data Migration Lange";
+            document.Info.Title = "SAMPLE TITLE NOTE";
+            document.Info.Subject = "Auto generated file of all list of items notes";
+            document.Info.Author = "Data Migration ";
 
             DefineStyles(document);
             DefineCover(document);
@@ -203,7 +203,7 @@ namespace ConsoleAppToConvertToPDF
             //Image image = section.AddImage("../../images/Logo landscape.png");
             //image.Width = "10cm";
 
-            paragraph = section.AddParagraph("SerPro Data Migration \n Case Notes Summary");
+            paragraph = section.AddParagraph(" Data Migration \n  Notes Summary");
             paragraph.Format.Font.Size = 16;
             paragraph.Format.Font.Color = Colors.DarkRed;
             paragraph.Format.SpaceBefore = "8cm";
@@ -223,7 +223,7 @@ namespace ConsoleAppToConvertToPDF
 
             HeaderFooter header = section.Headers.Primary;
             header.Format.Alignment = ParagraphAlignment.Right;
-            header.AddParagraph("\t SerPro Data Migration ");
+            header.AddParagraph("\t  Data Migration ");
 
 
             // Create a paragraph with centered page number. See definition of style "Footer".
